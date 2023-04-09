@@ -1,0 +1,22 @@
+div .img-prd{
+    border-radius: 39px;
+    display: block;
+  max-width:230px;
+  max-height:545px;
+  width: auto;
+  height: auto;
+ }
+ .footer-item .img-footer {
+    align-items: center;
+    display: flex;
+  }
+  
+  .footer-item .img-footer img {
+    width: 100%;
+  }
+
+  .content-product {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }

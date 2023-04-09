@@ -1,0 +1,568 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShopGuitar</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+</head>
+
+<body class="">
+    <script src="shop2.js"></script>
+
+
+    <header>
+        <nav>
+
+            <div class="img-nav">
+                <img class="nav"
+                    src="https://th.bing.com/th/id/R.31e7d1a8963fcd8ccc37688d723e07ce?rik=7ZFneqQf3QUlmg&pid=ImgRaw&r=0"
+                    alt="" height="40px" width="60px">
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <img src="" alt="">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li style="float:right"><a class="active" href="Login.html">Đăng nhập</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm...">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+
+            <button id="cart">
+
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">×</span>
+                    </div>
+
+
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            <div class="modal-body">
+
+                                <div class="cart-items">
+                                    <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image"
+                                                src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/69513248_2138409646459278_4280675392890601472_n.jpg"
+                                                width="" height="100%">
+                                            <span class="cart-item-title">ĐÀN GUITAR ACOUSTIC MÀU ĐEN</span>
+                                        </div>
+                                        <span class="cart-price cart-column">1.200.000đ</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="1">
+                                            <button class="btn btn-danger" type="button">Xóa</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image"
+                                                src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/6cd7adc8bc9d281976992adfcd861aba.jpg"
+                                                width="" height="">
+                                            <span class="cart-item-title">ĐÀN GUITAR ACOUSTIC GA-14HV</span>
+                                        </div>
+                                        <span class="cart-price cart-column">1.350.000</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="2">
+                                            <button class="btn btn-danger" type="button">Xóa</button>
+                                        </div>
+
+
+
+                                    </div>
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title">Tổng Cộng:</strong>
+                                        <span class="cart-total-price">2.550.000VNĐ</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                            <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+
+            <img class="mySlides2 animate-fading"
+                src="https://cdn.shopify.com/s/files/1/0105/4474/2481/files/Charvel_Frank_Bello_Signature_RetailerHPSlide_1366x500_95111128-5ee9-4d1e-8e32-054dd8c0086a_1300x.jpg?v=1671119436"
+                width="10px" height="300px">
+            <img class="mySlides2 animate-fading"
+                src="https://cdn.shopify.com/s/files/1/0105/4474/2481/files/EVH_Striped_Series_78_Eruption_RetailerHPSlide_1366x500_5ff9e8df-d7fe-481b-8a20-c22ead74fc0f_1300x.jpg?v=1666715119"
+                width="10px" height="300px">
+            <img class="mySlides2 animate-fading"
+                src="https://cdn.shopify.com/s/files/1/0105/4474/2481/files/Jackson_Rob_Cavestany_Death_Angel_RetailerHPSlide_1366x500_21643db0-57a8-4ad1-81dd-90868d7a74aa_1300x.jpg?v=1677770708"
+                width="10px" height="300px">
+            <img class="mySlides2 animate-fading"
+                src="https://cdn.shopify.com/s/files/1/0105/4474/2481/files/Charvel_Prashant_Aswani_Signature_Pro-Mod_RetailerHPSlide_1366x500_c9f2a361-fb70-4328-83ad-f4dc8242ab09_1300x.jpg?v=1678717039"
+                width="10px" height="300px">
+        </div>
+
+
+
+
+    </header>
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/ACCC009_1.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">AC110- BLUE</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1.500.00đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/14369952_1318054648206284_6454074626194919019_n.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">ĐÀN ACOUSTIC GIÁ RẺ AC120</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1.200.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/69913565_376845613207088_1425841250061254656_n.jpg"
+                            alt="" width="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">ĐÀN GUITAR ACOUSTIC
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">2.000.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/8dd89a5ad3328e05f1ea3af176affb23.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">ĐÀN GUITAR ACOUSTIC GA- 10 EL</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">890.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/67330588_213100122942614_5304102564076191744_n.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">ĐÀN GUITAR CLASSIC SQUIER - MÀU ĐEN
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1.200.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/847b5787fb1bc6f7393e9d00c11ea697.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">ĐÀN GUITAR CLASSIC VALOTE VC-101F</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1.800.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/67608037_2567551499931329_688202499831627776_n.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">ĐÀN GUITAR CLASSIC GC - 20HV</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">2.000.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/8dd89a5ad3328e05f1ea3af176affb23.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">ĐÀN GUITAR ACOUSTIC GA- 10 EL</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">890.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+
+
+
+                <p class="p">--------Phụ kiện Guitar--------</p>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/18767556_1609783855700027_6656226198777360858_n.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CAPO TUNER MEIDEAL</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">250.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/Mong-gay-dan-guitar.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">MÓNG GẢY ĐÀN GUITAR</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">15.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/Chot-deo-day-dan-Guitar.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">CHỐT ĐEO DÂY ĐÀN GUITAR</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">30.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/day-acoustic-mau.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">DÂY ACOUSTIC NHIỀU MÀU</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">70.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/16807668_1489891207689293_4833298614140500140_n.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">BỘ NỐT NHẠC DÁN CẦN GUITAR
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">60.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/5pcs-lot-ALaska-New-Thumb-Finger-font-b-Picks-b-font-Plectrums-Sets-Guitar-Rings-font.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">THUMPICK GUITAR</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://shopguitarcaugiay.com/components/com_jshopping/files/img_products/67876716_2421648787923284_7626903542988537856_n.jpg"
+                            alt="" height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">DÂY LINE ĐÀN GUITAR CHẤT LƯỢNG CAO</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">150.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://th.bing.com/th/id/OIP.ibG9sOe8jXD2-fdkrCe_ewHaHa?pid=ImgDet&rs=1" alt=""
+                            height="53%">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">DÂY LINE ĐÀN GUITAR CHẤT LƯỢNG CAO</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">150.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Mua Ngay</button>
+                        </div>
+                    </div>
+                </li>
+
+                <p class="p"></p>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-item">
+            <div class="img-footer">
+                <img src="https://th.bing.com/th/id/R.31e7d1a8963fcd8ccc37688d723e07ce?rik=7ZFneqQf3QUlmg&pid=ImgRaw&r=0"
+                    alt="" height="70px" width="70px">
+            </div>
+            <div class="social-footer">
+                <li><a target="_blank" href="https://www.facebook.com/hoangkhanh.vu.566/">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+
+
+
+
+                <script>
+                    var myIndex = 0;
+                    carousel2();
+
+                    function carousel2() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides2");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel2, 7000);
+                    }
+
+
+
+                    var modal = document.getElementById("myModal");
+                    var btn = document.getElementById("cart");
+                    var close = document.getElementsByClassName("close")[0];
+                    var close_footer = document.getElementsByClassName("close-footer")[0];
+                    var order = document.getElementsByClassName("order")[0];
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+                    close.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    close_footer.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    order.onclick = function () {
+                        alert("Cảm ơn bạn đã thanh toán đơn hàng")
+                        document.getElementsByClassName('cart-items')[0].innerHTML = "";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+
+                    var remove_cart = document.getElementsByClassName("btn-danger");
+                    for (var i = 0; i < remove_cart.length; i++) {
+                        var button = remove_cart[i]
+                        button.addEventListener("click", function () {
+                            var button_remove = event.target
+                            button_remove.parentElement.parentElement.remove()
+                        })
+                    }
+
+
+                    function updatecart() {
+                        var cart_item = document.getElementsByClassName("cart-items")[0];
+                        var cart_rows = cart_item.getElementsByClassName("cart-row");
+                        var total = 0;
+                        for (var i = 0; i < cart_rows.length; i++) {
+                            var cart_row = cart_rows[i]
+                            var price_item = cart_row.getElementsByClassName("cart-price ")[0]
+                            var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
+                            var price = parseFloat(price_item.innerText)
+                            var quantity = quantity_item.value
+                            total = total + (price * quantity)
+                        }
+                        document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
+
+                    }
+
+                    var quantity_input = document.getElementsByClassName("cart-quantity-input");
+                    for (var i = 0; i < quantity_input.length; i++) {
+                        var input = quantity_input[i];
+                        input.addEventListener("change", function (event) {
+                            var input = event.target
+                            if (isNaN(input.value) || input.value <= 0) {
+                                input.value = 1;
+                            }
+                            updatecart()
+                        })
+                    }
+
+
+                    var add_cart = document.getElementsByClassName("btn-cart");
+                    for (var i = 0; i < add_cart.length; i++) {
+                        var add = add_cart[i];
+                        add.addEventListener("click", function (event) {
+
+                            var button = event.target;
+                            var product = button.parentElement.parentElement;
+                            var img = product.parentElement.getElementsByClassName("img-prd")[0].src
+                            var title = product.getElementsByClassName("content-product-h3")[0].innerText
+                            var price = product.getElementsByClassName("price")[0].innerText
+                            addItemToCart(title, price, img)
+                            l
+                            modal.style.display = "block";
+
+                            updatecart()
+                        })
+                    }
+
+                    function addItemToCart(title, price, img) {
+                        var cartRow = document.createElement('div')
+                        cartRow.classList.add('cart-row')
+                        var cartItems = document.getElementsByClassName('cart-items')[0]
+                        var cart_title = cartItems.getElementsByClassName('cart-item-title')
+
+                        for (var i = 0; i < cart_title.length; i++) {
+                            if (cart_title[i].innerText == title) {
+                                alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
+                                return
+                            }
+                        }
+
+                        var cartRowContents = `
+  <div class="cart-item cart-column">
+      <img class="cart-item-image" src="${img}" width="100" height="100">
+      <span class="cart-item-title">${title}</span>
+  </div>
+  <span class="cart-price cart-column">${price}</span>
+  <div class="cart-quantity cart-column">
+      <input class="cart-quantity-input" type="number" value="1">
+      <button class="btn btn-danger" type="button">Xóa</button>
+  </div>`
+                        cartRow.innerHTML = cartRowContents
+                        cartItems.append(cartRow)
+                        cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
+                            var button_remove = event.target
+                            button_remove.parentElement.parentElement.remove()
+                            updatecart()
+                        })
+                        cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
+                            var input = event.target
+                            if (isNaN(input.value) || input.value <= 0) {
+                                input.value = 1;
+                            }
+                            updatecart()
+                        })
+
+                        alert("Thêm thành công sản phẩm vào giỏ hàng")
+                    }
+
+
+                </script>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
